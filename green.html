@@ -178,6 +178,24 @@ Suitable Places For Harvesting of Green Energy.
         "lng": '71.1924',
         "description": '<b>Capacity:</b>100MW <br> Total Project Cost:<b>600cr</b>'
     },
+		{
+			"title": 'Wind Power Project: Kerala',
+			"lat": '10.850516',
+			"lng": '76.271083',
+			"description": '<b>Capacity:</b>300MW <br> Total Project Cost:<b>1800cr</b>'
+		},
+		{
+			"title": 'Biomass Project: Haryana',
+			"lat": '29.058776',
+			"lng": '76.085601',
+			"description": '<b>Capacity:</b>50MW <br> Total Project Cost:<b>225cr</b>'
+		},
+		{
+			"title": 'Hydro power Project: Himachal Pradesh',
+			"lat": '31.104829',
+			"lng": '77.173390',
+			"description": '<b>Capacity:</b>100MW <br> Total Project Cost:<b>350cr</b>'
+		},
     
 	];
     window.onload = function () {
@@ -217,7 +235,7 @@ Suitable Places For Harvesting of Green Energy.
             (function (marker, data) {
                 google.maps.event.addListener(marker, "click", function (e) {
                     //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
-                    infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.description + "</div>");
+                    infoWindow.setContent(data.title+"<br><div style = 'width:200px;min-height:40px'>" + data.description + "</div>");
                     infoWindow.open(map, marker);
                 });
             })(marker, data);
