@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technocrats</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,400italic,300italic,300|Raleway:300,400,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/panel.css">
+  <script src="https://storage.googleapis.com/static.breezometer.com/widget/breezometer.plugin.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/textstyleair.css">
+<style>
+#breezometer{ border-radius: 9px 0 0 9px; height: 363px; }
+#breezometer_link{ display: none; }
+#map_address_bar{ border-radius: 9px 0 0 0}
+
+  .signalgreen{
+    color:#00C43B;
+    font-weight: bold;
+  }
+  .signalred{
+    color:#AF0000;
+    font-weight: bold;
+  }
+  .signalblue{
+    color:#00C47A;
+    font-weight: bold;
+  }
+  .signalyellow{
+    color:#CBB200;
+    font-weight: bold;
+  }
+  .signalorg{
+    color:#CB7B00;
+    font-weight: bold;
+  }
+
+</style>
+</head>
+
+<body style="background:#546e7a";>
+<header>
+<!--navigation bar-->
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-4">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Technocrats</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-4">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="air.html">Air</a></li>
+            <li><a href="water.html">Water</a></li>
+            <li><a href="soil.html">Soil</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+</header>
+ 
+    <div class="container wow fadeInUp delay-03s">
+      <div class="row">
+	    <div class="subhead content">
+        <span class="subfont">Air Quality Index Map<br /></span><span style="font-weight:700;font-size:6vh;">Shows air quality in Real-time</span><br />
+		<br>
+        <div class="subhead-cont">
+Offers relevant information and health recommendations.
+        </div>
+
+    </div>
+<div class="container" style="display: flex;">
+    <div id="breezometer_widget"></div>
+   
+	                        <div class="panel with-nav-tabs panel-info" style="margin-bottom: 0px;border-radius: 0px 5px 5px 0px;">
+                <div class="panel-heading">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab1info" data-toggle="tab"><p><span class="glyphicon glyphicon-tree-deciduous"></span></p>  </a></li>
+                            <li><a href="#tab2info" data-toggle="tab"><p><span class="glyphicon glyphicon-home"></span></p></a></li>
+                            <li><a href="#tab3info" data-toggle="tab"><p><span class="glyphicon glyphicon-plus-sign"></span></p></a></li>
+                            <li><a href="#tab4info" data-toggle="tab"><p><span class="glyphicon glyphicon-baby-formula"></span></p></a></li>
+                        </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab1info"><b>Outdoor :</b><br>
+                        <p class="signalred">0-20 :</p> You don't want to breathe the air outside. Take our word for it and stay indoors.<br>
+                        <p class="signalorg">20-40 :</p> In these conditions you should minimize your time outside as much as possible
+                        <br><p class="signalyellow">40-60 :</p> If you wish to stay outside for a long time, you should try to find a cleaner place nearby
+                        <br><p class="signalgreen">60-80 :</p> It's still OK out there. Just stay alert!!
+                        <br><p class="signalblue">80-100 :</p> It's an ideal time to go outside and enjoy the fresh air</div>
+
+
+
+
+
+                        <div class="tab-pane fade" id="tab2info"><b>Indoor :</b><br>
+<p class="signalred">0-20 :</p> Do us a favor: stay inside, turn on the A/C, and get comfortable, OK?<br>
+<p class="signalorg">20-40 :</p> If we were you – we would stay in a closed environment, with the A/C powered on.<br><p class="signalyellow">40-60 :</p> There's no need to get worried, but keep tracking air quality in the next few hours<br><p class="signalgreen">60-80 : </p>The amount of pollutants in the air is noticeable, but still there is no danger to your health<br><p class="signalblue">80-100 :</p> Open the windows, let that fresh air come in & go outside!
+</div>
+
+
+
+                        <div class="tab-pane fade" id="tab3info"><b>Health Sensitivities :</b><br>
+<p class="signalred">0-20 :</p> Why risk it? Refrain from any outdoor activities and be aware of any health issues.
+<br>
+<p class="signalorg">20-40 : </p>Suffering from respiratory difficulties?Keep your prescription medication within reach
+<br>
+<p class="signalyellow">40-60 :</p> Exposure to air hazards is dangerous for people with health sensitivities.<br>
+<p class="signalgreen">60-80 :</p> There is no real danger,just keep an eye out for changes in air quality for the next few hours<br>
+<p class="signalblue">80-100 : </p> With this particular air quality, you have no limitations.
+
+</div>
+
+
+<div class="tab-pane fade" id="tab4info"><b>Children :</b><br>
+<p class="signalred">0-20 :</p> Children & infants should not be outside in these air conditions
+        Now is the time to play inside with the kids.<br>
+<p class="signalorg">20-40 : </p>Keep calm and stay indoors. Do it for the kids....<br>
+<p class="signalyellow">40-60 :</p> Pay attention to signs of respiratory distress in small children<br>
+<p class="signalgreen">60-80 :</p> No reason to panic, but pay attention to changes in air quality and any signals of breathing problems in your children<br>
+<p class="signalblue">80-100 :</p> Don't wait at home with them another minute! Let the children enjoy the fresh outdoor air - You should play with them too!
+</div>
+                        
+                    </div>
+                </div>
+            </div>
+			</div>
+			 </div>
+			 </div>
+
+    
+<br>
+<br>
+
+<span class="content" style="font-weight:700;font-size:6vh;margin-left: 140px;""> Global Air Quality Index </span>
+<br>
+<br>
+
+ <div  id='map'  style='height:380px; border-radius: 10px; margin-left: 105px; width: 1139px;'></div>  
+
+<br>
+
+
+      <section>
+      <div class="container">
+        <div class="row bort text-center">
+          <div class="social">
+            <ul>
+              <li>
+                <a href=""><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row bort">
+
+        <div class="copyright">
+          Codeshastra 4.0
+          <div class="credits">
+
+            Designed By Technocrats.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--Air Quality-->
+  <script>
+    // call the widget inside the document ready
+    $(document).ready(function() {
+        // the jQuery selector same as the div
+        $('#breezometer_widget').breezometer({
+            key: "40bf2358190268377d584266cc14378a810cdeed"
+        });
+    }); // end document ready
+  </script>
+  <!--Global Air Quality-->
+ 
+  
+<script>  
+      var  map  =  new  google.maps.Map(document.getElementById('map'),  {  
+                  center:  new  google.maps.LatLng(22.97,  78.65),  
+                  mapTypeId:  google.maps.MapTypeId.ROADMAP,  
+                  zoom:  4  
+              });  
+  
+                              var  t  =  new  Date().getTime();  
+      var  waqiMapOverlay  =  new  google.maps.ImageMapType({  
+                  getTileUrl:  function(coord,  zoom)  {  
+                            return  'https://tiles.waqi.info/tiles/usepa-aqi/'  +  zoom  +  "/"  +  coord.x  +  "/"  +  coord.y  +  ".png?token=1f1c6fdd8113812d9d3b8c2a068ae30d3b4073e7";  
+                  },  
+                  name:  "Air  Quality",  
+        });  
+  
+      map.overlayMapTypes.insertAt(0,waqiMapOverlay);  
+</script>
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technocrats</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,400italic,300italic,300|Raleway:300,400,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/panel.css">
+  <script src="https://storage.googleapis.com/static.breezometer.com/widget/breezometer.plugin.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/textstyleair.css">
+<style>
+
+
+</style>
+</head>
+
+<body style="background:#546e7a";>
+<header>
+<!--navigation bar-->
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-4">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Technocrats</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-4">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="air.html">Air</a></li>
+            <li><a href="water.html">Water</a></li>
+            <li><a href="soil.html">Soil</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+</header>
+ 
+    <div class="container wow fadeInUp delay-03s">
+      <div class="row">
+	    <div class="subhead content">
+        <span class="subfont">Soil Quality Index Map<br /></span><span style="font-weight:700;font-size:6vh;">Shows Relevant Soil Quality</span><br />
+		<br>
+        <div class="subhead-cont">
+Offers relevant information and agricultural recommendations.Click on flags to know more about the soil quality of different regions.
+        </div>
+        </div>
+		<!--API and Details-->
+		<div id="dvMap" style="width: 100%; height: 450px; border-radius: 10px;">
+</div>
+
+
+   
+<div class="subhead" style=" color: white;">
+        <span style="font-weight:700;font-size:6vh;">Types of Soils Included In Map</span><br />
+		<br>
+        <div class="subhead-cont" style="width: 100%">
+
+<span style="font-weight:700;font-size:20px;">
+Laterite soil-
+</span>
+Lack fertility due to intensive leaching
+When manured and irrigated, some laterites are suitable for growing plantation crops like tea, coffee, rubber, cinchona, coconut.<br><br>
+<span style="font-weight:700;font-size:20px;">
+Mountain soil -
+</span>
+They are deficient in potash, phosphorus and lime.
+
+<br><br>
+<span style="font-weight:700;font-size:20px;">
+Desert soil -
+</span>
+Phosphates and nitrates make these soil fertile wherever moisture is available.
+
+<br><br>
+<span style="font-weight:700;font-size:20px;">
+Alkaline soil -
+</span>
+The accumulation of these salts makes the soil infertile and renders it unfit for agriculture.<br><br>
+
+<span style="font-weight:700;font-size:20px;">
+Marshy soil -</span>
+Most of these soils are under water during the rainy season but as soon the rains cease, they should be put under paddy cultivation.</span><br><br>
+
+<span style="font-weight:700;font-size:20px;">
+Aluvial soil-</span>
+The nutrient content of new alluvial soil is fair to medium depending on how long it has been cultivated. Conversely, the nutrient content of old alluvial soils is very low. 
+ <br><br>
+
+<span style="font-weight:700;font-size:20px;">
+Red soil-</span>
+They are acidic mainly due to the nature of the parent rocks and are poor in lime, magnesia, phosphates, nitrogen and humus.
+<br><br>
+<span style="font-weight:700;font-size:20px;">
+Black soil-</span>
+This soil contains moderate amounts of phosphorous but is poor in nitrogen.<br><br>
+        </div>
+		</div>
+				</div>
+		</div>
+	</div>
+<br>
+
+
+      <section>
+      <div class="container">
+        <div class="row bort text-center">
+          <div class="social">
+            <ul>
+              <li>
+                <a href=""><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row bort">
+
+        <div class="copyright">
+          Codeshastra 4.0
+          <div class="credits">
+
+            Designed By Technocrats.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+    var markers = [
+    {
+        "title": 'Rajasthan ',
+        "lat": '26.56',
+        "lng": '75.49',
+        "description": 'pH range:<b><h3>7.6-8.4</h3></b><br><b>Desert soil </b><br>Contain a high percentage of soluble salts but are poor in organic matter; rich enough in phosphate though poor in nitrogen<br><b>Suitable for Wheat, grams, melon, bajra (with irrigation)</b>'
+    },
+    {
+        "title": 'Northern Gujarat',
+        "lat": '22.2587',
+        "lng": '71.1924',
+        "description": 'pH range:<b><h3>7.6-8.4</h3></b><br><b>Desert soil </b><br>Contain a high percentage of soluble salts but are poor in organic matter; rich enough in phosphate though poor in nitrogen<br><b>Suitable for Wheat, grams, melon, bajra (with irrigation)</b>'
+    },
+    {
+        "title": 'Punjab',
+        "lat": '31.1471',
+        "lng": '75.3412',
+        "description": 'pH range:<b><h3>7.6-8.4</h3></b><br><b>Desert soil </b><br>Contain a high percentage of soluble salts but are poor in organic matter; rich enough in phosphate though poor in nitrogen<br><b>Suitable for Wheat, grams, melon, bajra (with irrigation)</b>'
+    },
+	{
+        "title": 'West Bengal',
+        "lat": '22.9868',
+        "lng": '87.8550',
+        "description": 'pH range:<b><h3> 6.5-8.4</h3></b><br><b>Alluvial Soil</b><br> Khaddar- light in color, more siliceous in composition and composed of newer deposit Bhaggar- the older alluvium is composed of lime nodules and has clayey composition. It is dark in color.<br>Contain a high percentage of soluble salts but are poor in organic matter; rich enough in phosphate though poor in nitrogen<br><b>Suitable for Rice , Wheat, Sugarcane, oilseeds</b>'
+    },
+	{
+        "title": 'Haryana',
+        "lat": '29.0588',
+        "lng": '76.0856',
+        "description": 'pH range:<b><h3> 6.5-8.4</h3></b><br><b>Alluvial Soil</b><br> Khaddar- light in color, more siliceous in composition and composed of newer deposit Bhaggar- the older alluvium is composed of lime nodules and has clayey composition. It is dark in color.<br>Contain a high percentage of soluble salts but are poor in organic matter; rich enough in phosphate though poor in nitrogen<br><b>Suitable for Rice , Wheat, Sugarcane, oilseeds</b>'
+    },
+	{
+        "title": 'Bihar',
+        "lat": '25.0961',
+        "lng": '85.3131',
+        "description": 'pH range:<b><h3> 6.5-8.4</h3></b><br><b>Alluvial Soil</b><br> Khaddar- light in color, more siliceous in composition and composed of newer deposit Bhaggar- the older alluvium is composed of lime nodules and has clayey composition. It is dark in color.<br>Contain a high percentage of soluble salts but are poor in organic matter; rich enough in phosphate though poor in nitrogen<br><b>Suitable for Rice , Wheat, Sugarcane, oilseeds</b>'
+    },
+	{
+        "title": 'Uttaranchal',
+        "lat": '30.0668',
+        "lng": '79.0193',
+        "description": 'pH range:<b><h3> 6.5-8.4</h3></b><br><b>Alluvial Soil</b><br> Khaddar- light in color, more siliceous in composition and composed of newer deposit Bhaggar- the older alluvium is composed of lime nodules and has clayey composition. It is dark in color.<br>Contain a high percentage of soluble salts but are poor in organic matter; rich enough in phosphate though poor in nitrogen<br><b>Suitable for Rice , Wheat, Sugarcane, oilseeds</b>'
+    },
+	{
+        "title": 'Uttar Pradesh',
+        "lat": '26.8467',
+        "lng": '80.9462',
+        "description": 'pH range:<b><h3> 6.5-8.4</h3></b><br><b>Alluvial Soil</b><br> Khaddar- light in color, more siliceous in composition and composed of newer deposit Bhaggar- the older alluvium is composed of lime nodules and has clayey composition. It is dark in color.<br>Contain a high percentage of soluble salts but are poor in organic matter; rich enough in phosphate though poor in nitrogen<br><b>Suitable for Rice , Wheat, Sugarcane, oilseeds</b>'
+    },
+	{
+        "title": 'Maharashtra',
+        "lat": '19.7515',
+        "lng": '75.7139',
+        "description": 'pH range:<b><h3>6.5-8.4</h3></b><br><b>Black Soil</b><br> The soils are derived from basalts of Deccan trap. They derive their name from their black color which may be owing to presence of titanium, iron.<br><b>Suitable for Cotton , millets(include Jowar ,Bajra and ragi ), tobacco, sugarcane</b>'
+    },
+	{
+        "title": 'Malwa Plateau',
+        "lat": '22.4200',
+        "lng": '75.5400',
+        "description": 'pH range:<b><h3>6.5-8.4</h3></b><br><b>Black Soil</b><br> The soils are derived from basalts of Deccan trap. They derive their name from their black color which may be owing to presence of titanium, iron.<br><b>Suitable for Cotton , millets(include Jowar ,Bajra and ragi ), tobacco, sugarcane</b>'
+    },
+	{
+        "title": 'Telengana',
+        "lat": '18.1124',
+        "lng": '79.0193',
+        "description": 'pH range:<b><h3>6.5-8.4</h3></b><br><b>Black Soil</b><br> The soils are derived from basalts of Deccan trap. They derive their name from their black color which may be owing to presence of titanium, iron.<br><b>Suitable for Cotton , millets(include Jowar ,Bajra and ragi ), tobacco, sugarcane</b>'
+    },
+	{
+        "title": 'Karnataka',
+        "lat": '15.3173',
+        "lng": '75.7139',
+        "description": 'pH range:<b><h3>7.6-8.4</h3></b><br>Related Content<br><b>Suitable for</b>'
+    },
+	{
+        "title": 'Andhra Pradesh',
+        "lat": '15.9129',
+        "lng": '79.7400',
+        "description": 'pH range:<b><h3>7.6-8.4</h3></b><br>Related Content<br><b>Suitable for</b>'
+    },
+	{
+        "title": 'Peninsular India',
+        "lat": '21',
+        "lng": '78',
+        "description": 'pH range:<b><h3>6.5-7.5</h3></b><br><b>Mixed Red</b><br> Consist of calcium and magnesium carbonates; high quantities of iron, aluminum, lime and magnesia and poor percentage of phosphate, nitrogen and organic matter<br><b>Suitable for Millets, wheat</b>'
+    },
+	
+	{
+        "title": 'Deccan plateau',
+        "lat": '17',
+        "lng": '77',
+        "description": 'pH range:<b><h3>5.5-7.5</h3></b><br><b>Red Soil </b>Mainly formed due to decomposition of ancient crystalline rocks like granites and gneisses and from rock type rich in minerals such as iron and magnesium.<br><b>Suitable for Wheat, Rice , Cotton , Sugarcane, pulses</b>'
+    },
+	{
+        "title": 'Kerala',
+        "lat": '10.8505',
+        "lng": '76.2711',
+        "description": 'pH range:<b><h3>5.5-7.5</h3></b><br><b>Red Soil </b>Mainly formed due to decomposition of ancient crystalline rocks like granites and gneisses and from rock type rich in minerals such as iron and magnesium.<br><b>Suitable for Wheat, Rice , Cotton , Sugarcane, pulses</b>'
+    },
+	{
+        "title": 'Tamil Nadu ',
+        "lat": '11.1271',
+        "lng": '78.6569',
+        "description": 'pH range:<b><h3>5.5-7.5</h3></b><br><b>Red Soil </b>Mainly formed due to decomposition of ancient crystalline rocks like granites and gneisses and from rock type rich in minerals such as iron and magnesium.<br><b>Suitable for Wheat, Rice , Cotton , Sugarcane, pulses</b>'
+    },
+	{
+        "title": 'Karnataka',
+        "lat": '16.3173',
+        "lng": '75.7139',
+        "description": 'pH range:<b><h3>5.5-7.5</h3></b><br><b>Red Soil </b>Mainly formed due to decomposition of ancient crystalline rocks like granites and gneisses and from rock type rich in minerals such as iron and magnesium.<br><b>Suitable for Wheat, Rice , Cotton , Sugarcane, pulses</b>'
+    },
+	{
+        "title": 'Jharkhand',
+        "lat": '23.6102',
+        "lng": '85.2799',
+        "description": 'pH range:<b><h3>5.5-7.5</h3></b><br><b>Red Soil </b>Mainly formed due to decomposition of ancient crystalline rocks like granites and gneisses and from rock type rich in minerals such as iron and magnesium.<br><b>Suitable for Wheat, Rice , Cotton , Sugarcane, pulses</b>'
+    },
+	{
+        "title": 'Rajasthan',
+        "lat": '28.0238',
+        "lng": '74.2179',
+        "description": 'pH range:<b><h3>7.6- 8.5</h3></b><br><b>Suitable for Cotton, oilseeds</b>'
+    },
+	{
+        "title": 'Gujarat',
+        "lat": '22.2587',
+        "lng": '70.1924',
+        "description": 'pH range:<b><h3>7.6- 8.5</h3></b><br><b>Suitable for Cotton, oilseeds</b>'
+    }
+	];
+    window.onload = function () {
+        LoadMap();
+    }
+    function LoadMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
+            zoom: 5,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("dvMap"), mapOptions);
+ 
+        //Create and open InfoWindow.
+        var infoWindow = new google.maps.InfoWindow();
+ var goldStar = {
+          url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          // This marker is 20 pixels wide by 32 pixels high.
+          size: new google.maps.Size(20, 32),
+          // The origin for this image is (0, 0).
+          origin: new google.maps.Point(0, 0),
+          // The anchor for this image is the base of the flagpole at (0, 32).
+          anchor: new google.maps.Point(0, 32)
+        };
+        for (var i = 0; i < markers.length; i++) {
+            var data = markers[i];
+            var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+				animation: google.maps.Animation.DROP,
+				icon: goldStar,
+                title: data.title
+            });
+ 
+            //Attach click event to the marker.
+            (function (marker, data) {
+                google.maps.event.addListener(marker, "click", function (e) {
+                    //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
+                    infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.description + "</div>");
+                    infoWindow.open(map, marker);
+                });
+            })(marker, data);
+        }
+    }
+</script>
+
+</body>
+
+</html>

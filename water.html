@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technocrats</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,400italic,300italic,300|Raleway:300,400,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/panel.css">
+  <script src="https://storage.googleapis.com/static.breezometer.com/widget/breezometer.plugin.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/textstyleair.css">
+<style>
+#breezometer{ border-radius: 9px 0 0 9px; height: 363px; }
+#breezometer_link{ display: none; }
+#map_address_bar{ border-radius: 9px 0 0 0}
+
+  .signalgreen{
+    color:#00C43B;
+    font-weight: bold;
+  }
+  .signalred{
+    color:#AF0000;
+    font-weight: bold;
+  }
+  .signalblue{
+    color:#00C47A;
+    font-weight: bold;
+  }
+  .signalyellow{
+    color:#CBB200;
+    font-weight: bold;
+  }
+  .signalorg{
+    color:#CB7B00;
+    font-weight: bold;
+  }
+  
+  .filterable {
+    margin-top: 15px;
+}
+.filterable .panel-heading .pull-right {
+    margin-top: -20px;
+}
+.filterable .filters input[disabled] {
+    background-color: transparent;
+    border: none;
+    cursor: auto;
+    box-shadow: none;
+    padding: 0;
+    height: auto;
+}
+.filterable .filters input[disabled]::-webkit-input-placeholder {
+    color: #333;
+}
+.filterable .filters input[disabled]::-moz-placeholder {
+    color: #333;
+}
+.filterable .filters input[disabled]:-ms-input-placeholder {
+    color: #333;
+}
+
+
+a:hover { COLOR: black; TEXT-DECORATION: none; font-weight: none }
+a:visited {  TEXT-DECORATION: none; font-weight: normal }
+a:active {  TEXT-DECORATION: none }
+
+
+</style>
+</head>
+
+<body style="background:#546e7a";>
+<header>
+<!--navigation bar-->
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-4">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Technocrats</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-4">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="air.html">Air</a></li>
+            <li><a href="water.html">Water</a></li>
+            <li><a href="soil.html">Soil</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+</header>
+ 
+    <div class="container wow fadeInUp delay-03s">
+     <div class="row">
+		<div class="subhead content">
+        <span class="subfont">Water Quality Map<br /></span><br><span style="font-weight:700;font-size:6vh;"><a class="linkAPI content" href="waterAPI.html" target="_blank"  > Click to Check Surface Water Quality of Your Area</a></span><br />
+		<br>
+        <div class="subhead-cont">
+Offers relevant water quality information and health recommendations.<br>
+API Courtesy: Indian Water Tools <3.
+        </div>
+		</div>
+		
+		<!--Table-->
+		        <div class="panel panel-primary filterable">
+            <div class="panel-heading">
+                <h3 class="panel-title">Users</h3>
+                <div class="pull-right">
+                    <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span></button>
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr class="filters">
+                        <th><input type="text" class="form-control" placeholder="#" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Contamination" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Definition" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Critical Values(Unsafe)" disabled></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Fecal Coliform Bacteria</td>
+                        <td>Measure of the concentration of total coliform bacteria associated with the possible presence of disease causing organisms.</td>
+                        <td>Over 200 Colonies/100 ml</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Low Dissolved Oxygen</td>
+                        <td>Dissolved oxygen (DO) refers to microscopic bubbles of gaseous oxygen (O2) that are mixed in water and available to aquatic organisms for respiration</td>
+                        <td>0-5 ppm</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>pH</td>
+                        <td>A figure expressing the acidity or alkalinity of a solution</td>
+                        <td>pH 0 to 6.5 & pH 8.5 to 14</td>
+                    </tr>
+					<tr>
+                        <td>4</td>
+                        <td>Sodium Absorption Ratio</td>
+                        <td>It is an indicator of the suitability of water for use in agricultural irrigation.</td>
+                        <td>>12mm/hr</td>
+                    </tr>
+					<tr>
+                        <td>5</td>
+                        <td>Chemical Oxygen Demand</td>
+                        <td>Chemical oxygen demand (COD) is a measure of the capacity of water to consume oxygen during the decomposition of organic matter.</td>
+                        <td>< 10 ppm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+		<!--Table End-->
+		<!--Precautions-->
+		
+				<div class="subhead content">
+        <span style="font-weight:700;font-size:6vh;">Precautions</span><br />
+		<br>
+        <div class="subhead-cont">
+
+
+1.  Working toward better, more efficient irrigation <br><br>
+
+2.  Introduction of Filtration in most water treatement methods <br><br>
+
+3.  Utilizing rainwater as a good step towards better and more plentiful water sources e.g rainwater harvesting <br><br>
+
+4.  Encouraging local farmers to use natural forms of pesticides and fertilizers instead of relying on chemicals  <br><br>
+
+5.  ​Enforcing stricter regulations about wastewater <br><br>
+
+6.  Encouraging use of ground water <br><br>
+
+7.   Appropriate disposal of hazardous household waste including compact fluorescent light bulbs, automotive fluids and electronics. <br><br>
+ 
+8.  Modern techniques to measure dissolved oxygen content in water involve either an electrochemical or optical sensor.<br><br>
+
+9. Water clarity and turbidity are directly related. In any waterbody, the higher the turbidity, the lower the water clarity will be. Water clarity is measured by a Secchi disk <br><br>
+        </div>
+		</div>
+<!--Precautions End-->
+	    </div>
+	 </div>
+	 
+<br>
+
+
+      <section>
+      <div class="container">
+        <div class="row bort text-center">
+          <div class="social">
+            <ul>
+              <li>
+                <a href=""><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row bort">
+
+        <div class="copyright">
+          Codeshastra 4.0
+          <div class="credits">
+
+            Designed By Technocrats.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+<script>
+
+$(document).ready(function(){
+    $('.filterable .btn-filter').click(function(){
+        var $panel = $(this).parents('.filterable'),
+        $filters = $panel.find('.filters input'),
+        $tbody = $panel.find('.table tbody');
+        if ($filters.prop('disabled') == true) {
+            $filters.prop('disabled', false);
+            $filters.first().focus();
+        } else {
+            $filters.val('').prop('disabled', true);
+            $tbody.find('.no-result').remove();
+            $tbody.find('tr').show();
+        }
+    });
+
+    $('.filterable .filters input').keyup(function(e){
+        /* Ignore tab key */
+        var code = e.keyCode || e.which;
+        if (code == '9') return;
+        /* Useful DOM data and selectors */
+        var $input = $(this),
+        inputContent = $input.val().toLowerCase(),
+        $panel = $input.parents('.filterable'),
+        column = $panel.find('.filters th').index($input.parents('th')),
+        $table = $panel.find('.table'),
+        $rows = $table.find('tbody tr');
+        /* Dirtiest filter function ever ;) */
+        var $filteredRows = $rows.filter(function(){
+            var value = $(this).find('td').eq(column).text().toLowerCase();
+            return value.indexOf(inputContent) === -1;
+        });
+        /* Clean previous no-result if exist */
+        $table.find('tbody .no-result').remove();
+        /* Show all rows, hide filtered ones (never do that outside of a demo ! xD) */
+        $rows.show();
+        $filteredRows.hide();
+        /* Prepend no-result row if all rows are filtered */
+        if ($filteredRows.length === $rows.length) {
+            $table.find('tbody').prepend($('<tr class="no-result text-center"><td colspan="'+ $table.find('.filters th').length +'">No result found</td></tr>'));
+        }
+    });
+});
+</script>
+</body>
+
+</html>
